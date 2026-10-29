@@ -1,22 +1,50 @@
-# Java and Maven
-**/target/
+# Build output
+target/
+build/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.mvn/wrapper/maven-wrapper.jar
+HELP.md
 
-# IntelliJ IDEA
+# Archives
+*.zip
+*.tar.gz
+*.rar
+
+# Logs and crash dumps
+*.log
+logs/
+hs_err_pid*
+replay_pid*
+
+# IDEs
 .idea/
 *.iml
-
-# Environment variables and secrets
-.env
-.env.*
-!.env.example
-
-# Logs
-*.log
-
-# Frontend dependencies and builds
-frontend/node_modules/
-frontend/dist/
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# Secrets and local config (never commit)
+.env
+.env.*
+!.env.example
+application-local.yml
+application-local.properties
